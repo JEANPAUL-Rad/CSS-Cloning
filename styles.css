@@ -561,6 +561,7 @@ footer {
 }
 
 .footer-bottom {
+  text-align: center;
   max-width: 1200px;
   margin: 40px auto 0;
   padding-top: 20px;
