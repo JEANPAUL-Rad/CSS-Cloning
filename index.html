@@ -3,72 +3,436 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jean paul web</title>
+    <title>FeWo-direct - Vacation Rentals, Holiday Homes, Apartments</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- HERO SECTION WITH NAVBAR -->
-    <div class="hero-section">
-      <!-- NAVBAR -->
-      <header>
-        <div class="navbar">
-          <!-- Logo -->
-          <div class="logo">
-            <img
-              src="https://www.upenn.edu/themes/custom/penn_global/logo.svg"
-              class="logo-img"
-              alt="My logo "
-              height="40"
-            />
-            <span class="text-2xl font-bold">Good</span>
+    <!-- Header -->
+    <header>
+      <div class="logo">FeWo-direct</div>
+      <nav class="nav-menu">
+        <a href="#">Download App</a>
+        <a href="#">Trip Planner</a>
+        <a href="#">Register Property</a>
+        <a href="#">Help</a>
+        <a href="#">My Trips</a>
+        <!-- <a href="#" class="login-btn">Login</a> -->
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>All good, you're booking with FeWo-direct</h1>
+
+        <!-- Search Form -->
+        <div class="search-form">
+          <div class="search-input">
+            <label>Where to?</label>
+            <div class="search-input-content">United Kingdom</div>
+          </div>
+          <div class="search-input">
+            <label>Dates</label>
+            <div class="search-input-content">20. May - 22. May</div>
+          </div>
+          <div class="search-input">
+            <label>Guests</label>
+            <div class="search-input-content">2 Travelers</div>
+          </div>
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Types Section -->
+    <section class="property-types">
+      <h2>Find accommodations that match your taste</h2>
+      <div class="property-grid">
+        <div class="property-card">
+          <img
+            src="/img/david-tip-f_35Q1DMSlM-unsplash.jpg"
+            alt="Holiday Home"
+          />
+          <div class="property-label">Holiday Home</div>
+        </div>
+        <div class="property-card">
+          <img
+            src="/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg"
+            alt="Apartment"
+          />
+          <div class="property-label">Apartment</div>
+        </div>
+        <div class="property-card">
+          <img src="/img/aubrey-odom-mrSuM73pmsw-unsplash.jpg" alt="Cottage" />
+          <div class="property-label">Cottage</div>
+        </div>
+        <div class="property-card">
+          <img
+            src="/img/grant-durr-lQkSp1wba1Q-unsplash.jpg"
+            alt="Country House"
+          />
+          <div class="property-label">Country House</div>
+        </div>
+        <div class="property-card">
+          <img
+            src="/img/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg"
+            alt="Villa"
+          />
+          <div class="property-label">Villa</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="featured-properties">
+      <div class="featured-container">
+        <h2>United Kingdom: Top-rated accommodations for your search</h2>
+        <p class="featured-subheading">Browse options for May 20-22</p>
+
+        <div class="featured-grid">
+          <div class="featured-property">
+            <div class="featured-image">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Family-friendly with Terrace"
+              />
+            </div>
+            <div class="featured-content">
+              <div class="rating">10</div>
+              <span class="rating-text">Exceptional (108 reviews)</span>
+              <h3 class="featured-title">
+                Family-friendly with Terrace, large Garden and Play Equipment
+              </h3>
+              <p class="featured-location">Monschau, North Rhine-Westphalia</p>
+              <p class="featured-price">£849</p>
+              <p class="price-details">£425 per night, incl. taxes & fees</p>
+            </div>
           </div>
 
-          <!-- Nav Links -->
-          <nav class="nav-links">
-            <div class="dropdown">
-              <button>Academics ⌄</button>
-              <div class="dropdown-content">
-                <a href="#">Undergraduate</a>
-                <a href="#">Graduate</a>
-                <a href="#">Libraries</a>
-              </div>
+          <div class="featured-property">
+            <div class="featured-image">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Spacious Country House"
+              />
             </div>
-            <div class="dropdown">
-              <button>Admissions & Aid ⌄</button>
-              <div class="dropdown-content">
-                <a href="#">Apply</a>
-                <a href="#">Tuition</a>
-              </div>
+            <div class="featured-content">
+              <div class="rating">10</div>
+              <span class="rating-text">Exceptional (12 reviews)</span>
+              <h3 class="featured-title">
+                Spacious Country House for Families and Groups up to 14 People
+              </h3>
+              <p class="featured-location">Badbergen, Lower Saxony</p>
+              <p class="featured-price">£1,125</p>
+              <p class="price-details">£562 per night, incl. taxes & fees</p>
             </div>
-            <a href="#">Athletics</a>
-            <a href="#">Research & Innovation</a>
-            <a href="#">Life at Penn</a>
-            <a href="#">About</a>
-          </nav>
+          </div>
 
-          <!-- Right side -->
-          <div class="right-side">
-            <button>🔍</button>
-            <div class="dropdown">
-              <button>Resources ⌄</button>
-              <div class="dropdown-content">
-                <a href="#">Directory</a>
-                <a href="#">Calendar</a>
-              </div>
+          <div class="featured-property">
+            <div class="featured-image">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Manor at the Water Castle"
+              />
             </div>
-            <button class="give-btn">Give to Penn</button>
+            <div class="featured-content">
+              <div class="rating">10</div>
+              <span class="rating-text">Exceptional (70 reviews)</span>
+              <h3 class="featured-title">Manor at the Water Castle</h3>
+              <p class="featured-location">Vierkirchen, Saxony</p>
+              <p class="featured-price">£297</p>
+              <p class="price-details">£148 per night, incl. taxes & fees</p>
+            </div>
+          </div>
+
+          <div class="featured-property">
+            <div class="featured-image">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Cozy Holiday Apartment"
+              />
+            </div>
+            <div class="featured-content">
+              <div class="rating">10</div>
+              <span class="rating-text">Exceptional (52 reviews)</span>
+              <h3 class="featured-title">
+                Cozy Holiday Apartment in Pfaffenwinkel between Munich and Alps
+              </h3>
+              <p class="featured-location">Oberhausen, Bavaria</p>
+              <p class="featured-price">£308</p>
+              <p class="price-details">£154 per night, incl. taxes & fees</p>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </section>
 
-      <!-- HERO TEXT -->
-      <div class="hero-text">
-        <p>Campus & Community</p>
-        <h1>Class of 2026 prepares for ‘iconic’ year during annual Hey Day</h1>
+    <!-- Special Categories -->
+    <section class="special-categories">
+      <div class="category-card">
+        <img src="/api/placeholder/600/400" alt="Lakeside Properties" />
+        <div class="category-label">VACATION PROPERTIES BY THE LAKE</div>
+        <div class="category-title">
+          Find your vacation property for a summer by the water
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="/api/placeholder/600/400" alt="Discounted Properties" />
+        <div class="category-label">AFFORDABLE ACCOMMODATIONS</div>
+        <div class="category-title">
+          Find a complete vacation property with a great discount
+        </div>
+      </div>
+    </section>
+
+    <!-- Beach Properties -->
+    <section class="beach-properties">
+      <div class="featured-container">
+        <h2>Discover the perfect beach accommodation for you</h2>
+        <p class="featured-subheading">Offers for August 9-13</p>
+
+        <div class="featured-grid">
+          <div class="featured-property">
+            <div class="featured-image">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Apartment with Sea View"
+              />
+            </div>
+            <div class="featured-content">
+              <div class="rating">9.4</div>
+              <span class="rating-text">Exceptional (109 reviews)</span>
+              <h3 class="featured-title">
+                Beautiful Apartment with Sea View in 5* Resort
+              </h3>
+              <p class="featured-location">Dubai, United Arab Emirates</p>
+              <p class="featured-price">£915</p>
+              <p class="price-details">£229 per night, incl. taxes & fees</p>
+            </div>
+          </div>
+
+          <div class="featured-property">
+            <div class="featured-image">
+              <img src="/api/placeholder/300/200" alt="Seychelles Apartment" />
+            </div>
+            <div class="featured-content">
+              <div class="rating">9.8</div>
+              <span class="rating-text">Exceptional (71 reviews)</span>
+              <h3 class="featured-title">
+                Seychelles: Holiday Apartment - Seychelles
+              </h3>
+              <p class="featured-location">Mahé Island</p>
+              <p class="featured-price">£362</p>
+              <p class="price-details">£90 per night, incl. taxes & fees</p>
+            </div>
+          </div>
+
+          <div class="featured-property">
+            <div class="featured-image">
+              <img src="/api/placeholder/300/200" alt="Ocean Front Condo" />
+            </div>
+            <div class="featured-content">
+              <div class="rating">9.6</div>
+              <span class="rating-text">Exceptional (125 reviews)</span>
+              <h3 class="featured-title">
+                Ocean Front Condo on the Sand with Sea View
+              </h3>
+              <p class="featured-location">San Diego, CA</p>
+              <p class="featured-price">£1,899</p>
+              <p class="price-details">£475 per night, incl. taxes & fees</p>
+            </div>
+          </div>
+
+          <div class="featured-property">
+            <div class="featured-image">
+              <img src="/api/placeholder/300/200" alt="La Jolla Beach Estate" />
+            </div>
+            <div class="featured-content">
+              <div class="rating">10</div>
+              <span class="rating-text">Exceptional (137 reviews)</span>
+              <h3 class="featured-title">
+                La Jolla / North Pacific Beach mini estate
+              </h3>
+              <p class="featured-location">San Diego, CA</p>
+              <p class="featured-price">£4,123</p>
+              <p class="price-details">£1,031 per night, incl. taxes & fees</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Private Accommodations -->
+    <section class="about-section">
+      <h2>Find private accommodations that suit you</h2>
+      <p>
+        Want to bring everyone from grandma to baby? Or your own friends? Your
+        private accommodation welcomes everyone.
+      </p>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3 class="benefit-title">Simply Carefree</h3>
+          <p>
+            With our Book-with-Confidence Guarantee, we offer you 24/7 support
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+          <h3 class="benefit-title">More Shared Moments</h3>
+          <p>
+            From booking to your stay - the entire process is simple and
+            uncomplicated
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🏠</div>
+          <h3 class="benefit-title">The Same Privacy as at Home</h3>
+          <p>
+            Enjoy benefits like a fully equipped kitchen, washing machine, pool,
+            garden and more
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3 class="benefit-title">More Vacation for Less Money</h3>
+          <p>More space, more privacy, more amenities - more value</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Host Section -->
+    <section class="host-section">
+      <div class="host-content">
+        <h2 class="host-title">
+          Rent your property confidently with FeWo-direct
+        </h2>
+        <p class="host-description">
+          Real-time support, quick and uncomplicated registration, and guests
+          with positive feedback - with FeWo-direct, hosting feels like a
+          vacation.
+        </p>
+        <a href="#" class="host-cta">List your property</a>
+      </div>
+      <div class="host-image">
+        <img src="/api/placeholder/600/500" alt="Woman relaxing in sauna" />
+      </div>
+    </section>
+
+    <!-- About FeWo-direct -->
+    <section class="about-section">
+      <h2 class="about-title">What is FeWo-direct?</h2>
+      <p class="about-text">
+        FeWo-direct is your competent contact for vacations in a holiday home or
+        holiday apartment. As part of Vrbo, one of the leading online
+        marketplaces for holiday home rentals, FeWo-direct offers you more than
+        two million unique accommodations, including fincas, bungalows,
+        apartments, cottages and even villas. Secure payments, 24/7 support and
+        the Book-with-Confidence Guarantee make bookings child's play. With the
+        user-friendly website and numerous practical filters, you can find your
+        dream holiday apartment for your budget without much effort. This way,
+        you'll definitely spend an unforgettable vacation that is stress-free
+        from the search through booking to your stay and departure.
+      </p>
+
+      <h2 class="about-title">
+        Renting a holiday apartment or holiday home: These are the advantages
+      </h2>
+      <p class="about-text">
+        Families and groups especially appreciate the advantages of holiday
+        accommodations: more space, more privacy, more amenities. You have more
+        flexibility and freedom to plan your vacation - regardless of whether
+        you want to go hiking in the picturesque countryside or take a city trip
+        or relax with your dog in the beautiful nature. Looking for a cozy
+        cottage in the mountains with a washing machine and whirlpool? A beach
+        house by the water or a large finca in the south with pool and fully
+        equipped kitchen? No problem, because holiday accommodations come in all
+        sizes and with any desired amenities that you want for your next family
+        vacation, adventure trip with friends or a romantic weekend.
+      </p>
+
+      <h2 class="about-title">Popular Destinations</h2>
+
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          <h3>Top Destinations</h3>
+          <span class="collapsible-icon">▼</span>
+        </div>
       </div>
 
-      <!-- Background overlay -->
-      <div class="overlay"></div>
-    </div>
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          <h3>More Top Destinations</h3>
+          <span class="collapsible-icon">▼</span>
+        </div>
+      </div>
+
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          <h3>Holiday Homes</h3>
+          <span class="collapsible-icon">▼</span>
+        </div>
+      </div>
+
+      <div class="collapsible-section">
+        <div class="collapsible-header">
+          <h3>Villas and Holiday Apartments</h3>
+          <span class="collapsible-icon">▼</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Explore FeWo-direct</h3>
+          <ul class="footer-links">
+            <li><a href="#">List a property</a></li>
+            <li><a href="#">Book with confidence</a></li>
+            <li><a href="#">Trust and security</a></li>
+            <li><a href="#">Resources for partners</a></li>
+            <li><a href="#">Holiday homes and vacation inspiration</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Affiliate partners</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Report illegal content</a></li>
+            <li><a href="#">Legal information/Contact</a></li>
+            <li><a href="#">Responsible owner</a></li>
+            <li><a href="#">Content guidelines and reporting content</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>The Vrbo Family</h3>
+          <ul class="footer-links">
+            <li><a href="#">Vrbo</a></li>
+            <li><a href="#">Abritel.fr</a></li>
+            <li><a href="#">FeWo-direkt.de</a></li>
+            <li><a href="#">Bookabach.co.nz</a></li>
+            <li><a href="#">Stayz.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 FeWo-direct, an Expedia Group company. All rights
+      </div>
+    </footer>
   </body>
 </html>
