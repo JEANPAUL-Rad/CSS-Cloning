@@ -380,6 +380,7 @@
         padding: 40px;
         max-width: 1200px;
         margin: 0 auto;
+        display: flex;
       }
 
       .about-title {
@@ -408,6 +409,13 @@
       .collapsible-icon {
         font-size: 1.2rem;
       }
+
+      .accomodations-heading{
+        padding-right: 30;
+        font-size: 1.2rem;
+      }
+
+      
 
       /* Footer */
       footer {
