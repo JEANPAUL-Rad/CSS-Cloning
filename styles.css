@@ -382,6 +382,13 @@
         margin: 0 auto;
         
       }
+      .private_acc{
+         padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        padding-right: 50px;
+      }
 
       .about-title {
         font-size: 1.8rem;
